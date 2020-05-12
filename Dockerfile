@@ -14,6 +14,6 @@ tnvm install node-v12.15.0 && tnvm use node-v12.15.0 && node -v && \
 npm install -g cnpm --registry=https://registry.npm.taobao.org && \
 tnvm install alinode-v5.15.0 && tnvm use alinode-v5.15.0 && which node && \
 # 安装监控和pm2
-npm install @alicloud/agenthub -g --registry=https://registry.npm.taobao.org && npm install pm2 -g --registry=https://registry.npm.taobao.org && which pm2 && \
+npm install @alicloud/agenthub pm2 yarn -g --registry=https://registry.npm.taobao.org && which pm2 && \
 # 设置环境变量
 export NODE_LOG_DIR=/tmp && export ENABLE_NODE_LOG=YES
