@@ -25,3 +25,4 @@ npm install @alicloud/agenthub pm2 yarn -g --registry=https://registry.npm.taoba
 # 设置环境变量
 export NODE_LOG_DIR=/tmp && export ENABLE_NODE_LOG=YES \
 && ln -s $ALINODE_BIN_DIR/* /usr/bin 
+RUN which node
