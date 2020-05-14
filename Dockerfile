@@ -24,3 +24,16 @@ npm install @alicloud/agenthub pm2 yarn -g --registry=https://registry.npm.taoba
 export NODE_LOG_DIR=/tmp && export ENABLE_NODE_LOG=YES 
 
 RUN ln -s $ALINODE_BIN_DIR/* /usr/bin && which node
+RUN echo alias node=$ALINODE_BIN_DIR/node >> /root/.bashrc \
+&& echo alias npm=$ALINODE_BIN_DIR/npm  >> /root/.bashrc \
+&& echo alias npx=$ALINODE_BIN_DIR/npx  >> /root/.bashrc \
+&& echo alias yarn=$ALINODE_BIN_DIR/yarn  >> /root/.bashrc \
+&& echo alias pm2=$ALINODE_BIN_DIR/pm2  >> /root/.bashrc \
+&& echo alias pm2-dev=$ALINODE_BIN_DIR/pm2-dev  >> /root/.bashrc \
+&& echo alias pm2-docker=$ALINODE_BIN_DIR/pm2-docker  >> /root/.bashrc \
+&& echo alias pm2-runtime=$ALINODE_BIN_DIR/pm2-runtime  >> /root/.bashrc \
+&& echo alias pm2-runtime=$ALINODE_BIN_DIR/pm2-runtime  >> /root/.bashrc \
+&& echo alias yarnpkg=$ALINODE_BIN_DIR/yarnpkg >> /root/.bashrc \
+&& echo alias agenthub=$ALINODE_BIN_DIR/agenthub >> /root/.bashrc \
+&& echo alias node-kill=$ALINODE_BIN_DIR/node-kill >> /root/.bashrc
+RUN source /root/.bashrc
